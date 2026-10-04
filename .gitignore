@@ -1,0 +1,31 @@
+# Build artifacts
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+.packages
+pubspec.lock
+
+# Firebase secrets — NEVER commit these
+*adminsdk*.json
+*service-account*.json
+firebase_options.dart
+google-services.json
+GoogleService-Info.plist
+
+# Supabase CLI (installed as a local npm dev-dependency) + Edge Function artifacts
+node_modules/
+supabase/.temp/
+
+# IDE
+.idea/
+*.iml
+.claude/
+
+# Local secrets
+.env.local
+
+# Release signing — NEVER commit these
+android/key.properties
+android/app/*.jks
+android/app/*.keystore
